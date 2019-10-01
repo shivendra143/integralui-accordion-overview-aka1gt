@@ -1,0 +1,5 @@
+<iui-accordion [groups]="data" [selectedGroup]="selGroup" [controlStyle]="ctrlStyle" [allowAnimation]="true" #accordion>
+  <iui-groupbox *ngFor="let group of data" text="{{group.text}}" icon="{{group.icon}}" [expandBoxType]="'arrow'" [allowAnimation]="true" #groupbox>
+      <div class="acc-ovw-group-content">{{group.body}}</div>
+  </iui-groupbox>
+</iui-accordion>
